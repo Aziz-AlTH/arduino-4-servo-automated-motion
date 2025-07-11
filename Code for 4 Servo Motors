@@ -1,0 +1,29 @@
+#include <Servo.h>
+
+Servo servo1;
+Servo servo2;
+Servo servo3;
+Servo servo4;
+
+void setup() {
+  servo1.attach(3);  
+  servo2.attach(4); 
+  servo3.attach(5);  
+  servo4.attach(6);  
+}
+
+void loop() {
+  
+  servo1.write(0);
+  servo2.write(45);
+  servo3.write(90);
+  servo4.write(135);
+  delay(1000);
+
+  
+  servo1.write(180);
+  servo2.write(135);
+  servo3.write(100);
+  servo4.write(45);
+  delay(1000);
+}
